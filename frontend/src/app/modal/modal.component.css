@@ -1,0 +1,15 @@
+.content{
+    border: 2px solid rgb(145, 145, 255);
+    border-radius: 29px;
+    background-color: rgb(208, 208, 235);
+}
+mat-dialog-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

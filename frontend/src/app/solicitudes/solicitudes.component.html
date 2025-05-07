@@ -1,0 +1,43 @@
+  <section>
+    <div class="content">
+        <nav>
+            <p>Fecha: {{datosV[id2 - 1].fechaSolicitud}}</p>
+            <p>{{datosV[id2 - 1].estado}}</p>
+          </nav>
+        <div class="Titulo">
+            <h2>{{datosV[this.id2 -1].perfil}}</h2>
+        </div>
+        <div class="des_vacante">
+            <h4>Descripción de la vacante</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo esse est, vel repellat dolore vitae? Maxime quod eaque voluptatibus iste architecto quo minima assumenda hic consectetur quam! Natus, quidem dolorem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos animi labore voluptatum non, ad libero excepturi sunt facere veritatis quasi blanditiis nesciunt consequatur repellendus quis tempore, nulla dolorum porro alias!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, suscipit sunt! Enim ex, facere laboriosam, eum, ipsam ut eaque itaque tempore vel blanditiis aperiam consequatur iusto soluta! Inventore, ea voluptas.
+            </p>
+        </div>
+        <div class="Edit_vacante">
+            <select #select>
+            </select>
+            <select name="" id="">
+                <option value="">Abierto</option>
+                <option value="">Cerrado</option>
+                <option value="">Pendiente</option>
+            </select>
+            <input type="date" name="" id="" placeholder="Fechade cierre">
+        </div>
+        <div class="Cont_Observaciones">
+            <input type="text" [(ngModel)]="evaluacion">
+            <button (click)="aggEvaluacion();">Guardar</button>
+            <div class="Observaciones">
+                <button>Agregar</button>
+                <button>Eliminar</button>
+            </div>
+        </div>
+        <div class="aggEvaluacion">
+
+        </div>
+        <div class="Cont_Cerrar">
+            <button class="cerrarSoli" (click)="cerrarSoli();">Volver</button>
+        </div>
+    </div>
+    
+  </section>

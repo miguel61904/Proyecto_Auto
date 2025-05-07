@@ -1,0 +1,58 @@
+.chart-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  margin: auto;
+  width: 100%;
+  padding: 5px;
+}
+
+.graf-fechas{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 32vw;
+  height: 100%;
+}
+.graf-solicitudes{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 30vw;
+  height: 100%;
+
+}
+.graf-talentos{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 30vw;
+  height: 100%;
+
+}
+.btn-graficas{
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  width: 100px;
+  height: 50px;
+  background-color:  #234e9b;
+  color: white;
+  border-color: #234e9b;
+  border-radius: 5px;
+}
+.content_date{
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.content_date[hidden]{
+  display: none;
+}
+
+  

@@ -1,0 +1,158 @@
+Responder a todos|EliminarCorreo no deseado|
+Re: Solicitud de prestador de servicios DESARROLLOS BACK-END SENIOR ID: 3,290
+Catalina Trujillo Alvarez
+mar 5/11, 11:54 a.m.
+Miguel Franco Vargas
+TCS Confidential
+
+
+FYI
+From: talentosVSTI@bancolombia.com.co <talentosVSTI@bancolombia.com.co>
+Sent: Thursday, October 31, 2024 10:52 AM
+Subject: Solicitud de prestador de servicios DESARROLLOS BACK-END SENIOR ID: 3,290
+ 
+External Email : Be cautious while opening any links or attachments.
+Cordialsaludo,
+
+Desde la Gerencia de Administración Integral Equipos de TI, solicitamos su apoyo para el envío de prestadores de servicio que cumplan los conocimientos y experiencia descritos en este mensaje, por favor tener presente que cuenta con un máximo de 2 días para notificar su participación en el proceso, en caso de no hacerlo, Valko cancelará la participación en la solicitud automáticamente. Recuerde que esta solicitud cuenta con 7 días de posteo.
+
+Las respuestas enviadas fuera de la herramientao fuera de este plazo no serán registradas para la revisión del prestador delservicio.
+
+CATEGORÍA SOLICITADA: DESARROLLOS BACK-END SENIOR
+
+HABILIDADES TÉCNICAS:RPG/ILE, DB2, Artifactory, Git, UrbanCode
+
+INFORMACIÓN ADICIONAL: Se postea para su gestión. Tener en cuenta, se requieren conocimientos en: ISERIES (RPG-RPGILE-COBOL-CL-SQL-DB2 - DEVOPS). Adicional recuerde que los resultados de las pruebas deben ser compartidos en Evalart.
+
+PRUEBAS A PRESENTAR:
+
+TST_2024_V1: MATRIZ_ING_SOFTWARE_BACKEND
+
+
+IMPORTANTE:
+
+- Si usted no desea participar enviando prestadores de servicio a esta solicitud, por favor notificarlo de manera inmediata alremitente o en un máximo de 2 días, sino Valko cancelará la participación en la solicitud automáticamente.
+
+- El documento de identidad, el nombre completo, el perfil, la tarifa, la categoríay el nivel de cada prestador de servicio son datos obligatorios, sin esta informaciónel prestador de servicios NO será tenido en cuenta dentro de lasolicitud.
+
+Saludos,
+
+Administración Proveedores TI
+
+
+Bancolombia
+Detalles de mensaje
+Received: from INMUMEXCH81.TCS.com (10.17.195.159) by INMUMEXCH84.TCS.com
+ (10.17.192.6) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.2.1544.11 via Mailbox
+ Transport; Tue, 5 Nov 2024 22:24:56 +0530
+Received: from INMUMEXCH54.TCS.com (10.17.192.118) by INMUMEXCH81.TCS.com
+ (10.17.195.159) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.2.1544.11; Tue, 5 Nov
+ 2024 22:24:55 +0530
+Received: from INMUMEXCHEG04.tcs.com (10.17.194.185) by INMUMEXCH54.TCS.com
+ (10.17.192.118) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.1.2507.39 via Frontend
+ Transport; Tue, 5 Nov 2024 22:24:56 +0530
+Received: from IND01-BMX-obe.outbound.protection.outlook.com (104.47.74.239)
+ by exchonline.tcs.com (10.17.194.185) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.1.2507.39; Tue, 5 Nov 2024 22:24:55 +0530
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=CTL6B3xF95xb8aVm9wkY6p5jyho7eTGnp31BUxRKIlo1WjMhfbqmHyOegfVlupb9CILuFYHlNbkeazctZkIkwWYI2qd+YUnYlGegQxEzqE6CwZlQkymifn7bPiQYCVwOSrjn8ootij/PUwzeHXgbl8esSH39J4ZcNECJyL+VLXbkKERWJm9hLlJpBDNtAxU2t8dGVnAQQ0+kBoH+Salvi4gKdEusiDBdgU0A7qGFX9sVmOHErUm8934swVCw6lwc9UpcXu7wajyLOjHd0iQh7uSfTmtIh2QWkVYhI/u2hA1n7vbfV7GRvPSVJSCO2U4HgSS1YQmZ4gkucl/TlgqJJA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=62R1lzeWlwrnO3mHmUkEIcgKTB0k4QUtQujK9NcQy94=;
+ b=waMRepzjNdQGTDXQ251ybt9geZYNA3n1p70KUTZWLHRMhVLeTKV1Thbbjpv4bLvycPmeuPNxcGqY74CGEeF00NIHLHaFM3GhBv7+s4H8MUHPwelPaQP5dSBb87Cw+40L+oftA9UG0TynfKArFXhJswoPRFJt9UW7n8PfoKwx8GfMwbM0n5PhDtn1iuboe47uzJYw8WkllvEjVA77nbcc3GxR5j3YcQaSjMOUO6A4FfbphsX8837c8iUcSfmpvfeZs5Qy+L0+AYtap1BsirchJVUMOOMswUapu26b9IZoC1cj/JMSxMDYdqzBtRyYiWXA+6g6z+tzFsEyMbmW7nKFuA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=tcs.com; dmarc=pass action=none header.from=tcs.com; dkim=pass
+ header.d=tcs.com; arc=none
+Received: from PN3P287MB3303.INDP287.PROD.OUTLOOK.COM (2603:1096:c01:22d::7)
+ by PN3P287MB1226.INDP287.PROD.OUTLOOK.COM (2603:1096:c01:197::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8114.20; Tue, 5 Nov
+ 2024 16:54:54 +0000
+Received: from PN3P287MB3303.INDP287.PROD.OUTLOOK.COM
+ ([fe80::e1f5:c141:599d:10a9]) by PN3P287MB3303.INDP287.PROD.OUTLOOK.COM
+ ([fe80::e1f5:c141:599d:10a9%4]) with mapi id 15.20.8114.028; Tue, 5 Nov 2024
+ 16:54:53 +0000
+From: Catalina Trujillo Alvarez <catalina.trujillo@tcs.com>
+To: Miguel Franco Vargas <francovargas.miguel@tcs.com>
+Subject: Re: Solicitud de prestador de servicios DESARROLLOS BACK-END SENIOR
+ ID: 3,290
+Thread-Topic: Solicitud de prestador de servicios DESARROLLOS BACK-END SENIOR
+ ID: 3,290
+Thread-Index: AQHbK6z3TCpHOSlsPEmcO1GgeF1PZrKo72pg
+Date: Tue, 5 Nov 2024 16:54:53 +0000
+Message-ID: <PN3P287MB3303C1CBCDD45275E8E627D3FD522@PN3P287MB3303.INDP287.PROD.OUTLOOK.COM>
+References: <1306164874.22412.1730389929975@ip-10-103-128-142.ec2.internal>
+In-Reply-To: <1306164874.22412.1730389929975@ip-10-103-128-142.ec2.internal>
+Accept-Language: en-US, es-CO
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels: MSIP_Label_1aabfc0d-38d5-4801-9e82-1226fde31efa_Enabled=True;MSIP_Label_1aabfc0d-38d5-4801-9e82-1226fde31efa_SiteId=404b1967-6507-45ab-8a6d-7374a3f478be;MSIP_Label_1aabfc0d-38d5-4801-9e82-1226fde31efa_SetDate=2024-11-05T16:54:53.716Z;MSIP_Label_1aabfc0d-38d5-4801-9e82-1226fde31efa_Name=TCS
+ Confidential;MSIP_Label_1aabfc0d-38d5-4801-9e82-1226fde31efa_ContentBits=0;MSIP_Label_1aabfc0d-38d5-4801-9e82-1226fde31efa_Method=Standard;
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=tcs.com;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: PN3P287MB3303:EE_|PN3P287MB1226:EE_
+x-ms-office365-filtering-correlation-id: adb1250e-197a-42f1-f804-08dcfdba9220
+x-ld-processed: 404b1967-6507-45ab-8a6d-7374a3f478be,ExtAddr
+x-microsoft-antispam: BCL:0;ARA:13230040|366016|8096899003|41050700001;
+x-microsoft-antispam-message-info: tfXoSBmgZDhLGtK3lUlJ+15DXebAxnsqqEQXQbQjMz5BDNkIebeioCIFTcR8zoIMAu2q1sKwYKz2eOvxFnAk3W9ROlKezUbhIaYlbRCAIskUpcHrKkylqu9kTXK3caw/4UdV8RjVMh5A1M+u0mtrjDchUmCnRVD9YLMYAVp2MgXwLvTS5A9fcDwdsSlHdhtdsYQ+mn/CbElOk0aBbU5KEaoA9wngjzymwY4/E/fJ3E/S5UUfIHdzne94BMww6iQq41pjo/jQusBUUU6jv1xF/w08mDRuHciDpcGljEfU+ctemGLZSUMJhdUEkZOYN2WrIVyCSEVGinqvc9PKWHonZwMcpVkKlH61AC80VDcRxPPjG69F79x+MT76fDnzEeLCXAS7ZYdm2uobVqI4A44guHaLSqmYZU2mD/2UdSSZTjOkEdWDA89e2highpEoDI3u6+UU+JAUZENe7VJs6xs18HXWU/JgcJNeXYZqvKoEQ/u7nWggt8ovXxUhtw5aRQryiXvqSWj4+ceuAG/1pC8lRRoIXa3AuGhUBrdkjrcDKryrx7x6ynGcm/U2USw1biUoSa76VGZ+2kUjnND8Fs3A4TAlkrVzWaFThQVkYUEcOSGSnjn1OmbGcTwuzFTwhP/LFReMBAXfPrT3qfFQVErk0Qpuzujvtq4kyqNAbNd5j/mhtSOUoqNufE0geyPTV6EhJu+hDoIZHvf8EqHi4f3VG5BhvMb92Hab9CIIOCZzZKpW8BIbY+hS8KshTD14U+Fc/F1U2i/a3xQ6iTxtb+r5Zw==
+x-forefront-antispam-report: CIP:255.255.255.255;CTRY:;LANG:es;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:PN3P287MB3303.INDP287.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230040)(366016)(8096899003)(41050700001);DIR:INT;
+Content-Type: multipart/alternative;
+	boundary="_000_PN3P287MB3303C1CBCDD45275E8E627D3FD522PN3P287MB3303INDP_"
+MIME-Version: 1.0
+X-MS-Exchange-AntiSpam-ExternalHop-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-ExternalHop-MessageData-0: L69bf/8ZCeyG4IlQtK0CvFsB4bgTor8D1Vf/llSnW5Hj0gO2MCnPWzMm+Pfvb/Ff5bbn1USb/aY5B230ycu2rWUut0JCdHWAMWkpAeSiWOo6ZpBMDFdtNvatjR2QspOEH17+wB7GIzo2mi8tvX9lPJfmGy/jjdK3GpPGo3h0GIB3XsuHJCEIv3bGCN8yaiXXqKvPCo/tBKiIsuYkWmRZkdz5e+vT5GLjPOF0aBemezPwNYHXQyfc+JTxMW9u5WGTpeC8gZRsEM05zmHl+Dw7RDIaObmEBNuvh0GP905R8PqQY0J0bsn2Lsm8VZ+abQrFNbazGc9q+dcLyLimTQxTvIuR0oZBDe6WVTZ07yGkJRaONKCdzrtJun0v6JgZb4eyABtbGwk22GQLxF90S/5+IU7Sr1k9Ye7pGO6sYuWX0PbambiZaVqJNeAYx7NPQGy2t3ma5m4OHvCANk4ReaW6h0DWPkRRZotg+jC/v+2VDGUd6809mcbxzDUZzulq8OlBpW2XbBBbDhOUN4u9Bo4f36lWBGaXmKeEn3ST2BKjiTzwaQUZHMHBZgs7jhM+Xy0x5X03lJl2vl4rHxpC5DNW0Xehz+COI3Bb+oK3VJgn15z7e2c8SbaxoyvFAAtXZgclkCcPXoNN82lKa9gEyvAnGA==
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: PN3P287MB3303.INDP287.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: adb1250e-197a-42f1-f804-08dcfdba9220
+X-MS-Exchange-CrossTenant-originalarrivaltime: 05 Nov 2024 16:54:53.7011
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 404b1967-6507-45ab-8a6d-7374a3f478be
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: 6PE3TTfGFsPuMns5ys/EI9r5XsfbYJNzhDz5uIkv4mZ1RzVRD+P5RsqSkOZfV14v
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PN3P287MB1226
+X-OrganizationHeadersPreserved: PN3P287MB1226.INDP287.PROD.OUTLOOK.COM
+Return-Path: catalina.trujillo@tcs.com
+X-MS-Exchange-Organization-Network-Message-Id: 44329910-4c1e-44d4-9184-08dcfdba935e
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: PN3P287MB3303.INDP287.PROD.OUTLOOK.COM
+X-MS-Exchange-Organization-SCL: -1
+X-CrossPremisesHeadersPromoted: INMUMEXCHEG04.tcs.com
+X-CrossPremisesHeadersFiltered: INMUMEXCHEG04.tcs.com
+X-CrossPremisesHeadersFilteredBySendConnector: INMUMEXCHEG04.tcs.com
+X-OrganizationHeadersPreserved: INMUMEXCHEG04.tcs.com
+X-TM-AS-Product-Ver: SMEX-14.0.0.3092-9.0.1002-28778.001
+X-TM-AS-Result: No-10--28.900500-8.000000
+X-TMASE-MatchedRID: HLMPCFyIyBNgtkPyw5geSCXqTuPxIT+8pjnmJgKhwtFblORedJ7IH1SF
+	e8Or+tYuqFjvCTuYYiWkBjMyN63UGF/xSKPAEVb507qOahvQFUNkWBf92tY4+v4GDjCjZg/WUFQ
+	P4cdXDTHsdo6AOzU/lWt9K+z9Q7+YZ7VOdkBjoJKgSGaB9EPWZnEkCXMt6tQYiwRlHHspsyBh2H
+	vt6Llk4O6juZ0og5dBC+qfevBLzzrIoBHPR2Qe4zCphGDkkbfT0Xm3zNiCTIfejG3FsRdMEz5Yq
+	UNn3hS7XT+9sz8mzuamUV16RSLTR7nND6XNQn8kEVbAEaegT1oM/Si6fLqvHXFeJn7s64RgCtuW
+	olxxNzu3xjXR9H4YHcACgY3BBg8fShz1OFYcjoeLLbU5zSd2LhYyUVd2qigAY8r/ndGdDsXVzts
+	7wobCTcq8iDDcGrjzZ5MpMRJWR16kEHzizm0Zrytm84n9WARvcnVJTyjl5Y5SAJV7Jfnhgi8KMo
+	xbxTfnrYUaGCNcYy6kwu7jdYTJHucFtfqLcoPJ7G/6Rj4IDbYRO0VhRx/9xweLCIX046iBjNLxr
+	cxKViWsFJeHnIHZi1J7qurUfgrV09u9852d+TI2aDVyTGx/p5kShYcLpGH9rDZuIFerDYS3IO6q
+	x53304HA6IBd3vQsH4uGS3NhjVcjjSj5ypko37NE9DxPih7lK39Vnjxo/9DDv5dDcuT2edxX+/s
+	b6BPBn+ljherCHks37RdgrkhHyx8Oh4PSTCdFRNColpDAAAS6ONg3bN/9Kpsoi2XrUn/JUXy2kg
+	FQ7cqrEHfaj14Zyf+K1r6Y/VHIE3C4QgN06EBkOfJPDlODucn7rhflEvO/Yg7HWSJMgKOVvP3Tc
+	FKHWw==
+X-TM-AS-User-Approved-Sender: No
+X-TM-AS-User-Blocked-Sender: No
+X-TMASE-Result: 10--28.900500-8.000000
+X-TMASE-Version: SMEX-14.0.0.3092-9.0.1002-28778.001
+X-TM-SNTS-SMTP: DC0DCE83395C3CDA35CC595917B87888083F19EF778AB6828CAF6673B1EEB99C2000:8
+X-MS-Exchange-Organization-AVStamp-Mailbox: SMEXJnq?;1969700;0;This mail has
+ been scanned by Trend Micro ScanMail for Microsoft Exchange;
+X-OriginatorOrg: TCS.COM
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.3909544
+X-MS-Exchange-Processed-By-BccFoldering: 15.02.1544.011
+
+Cerrar

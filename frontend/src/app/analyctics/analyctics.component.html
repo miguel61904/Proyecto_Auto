@@ -1,0 +1,60 @@
+<div class="chart-container">
+  <!-- GRAFICA DE FECHAS -->
+  <div class="graf-fechas">
+    <div class="content_date">
+    </div>
+    
+    <canvas
+    baseChart
+    [datasets]="pieChartDataTwo.datasets"
+    [labels]="pieChartDataTwo.labels"
+    [options]="pieChartOptionsTwo"
+    [legend]="true"
+    [type]="chartTypeTwo">
+  </canvas>
+  <div class="btn-graficas">
+    <button (click)="cambiarGraficoDos('pie');">Gráfico de Pie</button>
+    <button (click)="cambiarGraficoDos('bar');">Gráfico de Barras</button>
+    <button (click)="cambiarGraficoDos('line');">Gráfico de Líneas</button>
+  </div>
+  <button id="agregar-contenedor">Rango fechas</button>
+<div id="contenedor-principal"></div>
+</div>
+
+
+  <!-- GRAFICA DE SOLICITUDES -->
+<div class="graf-solicitudes">
+  <canvas
+    baseChart
+    [datasets]="pieChartData.datasets"
+    [labels]="pieChartData.labels"
+    [options]="pieChartOptions"
+    [legend]="true"
+    [type]="chartType">
+  </canvas>
+  
+  <div class="btn-graficas">
+    <button (click)="cambiarGrafico('pie');">Gráfico de Pie</button>
+    <button (click)="cambiarGrafico('bar');">Gráfico de Barras</button>
+    <button (click)="cambiarGrafico('line');">Gráfico de Líneas</button>
+  </div>
+</div>
+
+
+<!-- GRAFICA DE TALENTOS -->
+<div class="graf-talentos">
+  <canvas
+  baseChart
+  [datasets]="pieChartDataThree.datasets"
+  [labels]="pieChartDataThree.labels"
+  [options]="pieChartOptionsThree"
+  [legend]="true"
+  [type]="chartTypeThree">
+</canvas>
+<div class="btn-graficas">
+  <button (click)="cambiarGraficoTres('radar');">Gráfico de Pie</button>
+  <button (click)="cambiarGraficoTres('bar');">Gráfico de Barras</button>
+  <button (click)="cambiarGraficoTres('line');">Gráfico de Líneas</button>
+</div>
+</div>
+</div>

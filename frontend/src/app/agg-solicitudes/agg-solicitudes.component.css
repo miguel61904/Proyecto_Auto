@@ -1,0 +1,28 @@
+.chip{
+    width: auto;
+    height: 20px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+button-icon{
+    display: flex;
+    width: 15px;
+    height: 15px;
+    align-items: center;
+    background-image: url("../assets/img/icons8-multiply-16.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+mat-dialog-content{
+    display: flex;
+    width: 30vw;
+    height: 70vh;
+    flex-direction: column;    
+    align-content: center;
+}

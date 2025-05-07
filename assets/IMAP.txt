@@ -1,0 +1,161 @@
+// application.properties
+mail.imap.username=tu_correo@outlook.com
+mail.imap.password=tu_contraseña
+mail.imap.host=outlook.office365.com
+mail.imap.port=993
+mail.imap.protocol=imaps
+mail.imap.ssl.enable=true
+mail.imap.connectiontimeout=10000
+mail.imap.timeout=10000
+ 
+// EmailConfig.java
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+import lombok.Data;
+ 
+@Data
+@Configuration
+@ConfigurationProperties(prefix = "mail.imap")
+public class EmailConfig {
+    private String username;
+    private String password;
+    private String host;
+    private int port;
+    private String protocol;
+    private boolean ssl;
+    private int connectiontimeout;
+    private int timeout;
+}
+ 
+// EmailReader.java
+import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.mail.*;
+import jakarta.mail.internet.*;
+import java.util.Properties;
+import java.io.IOException;
+ 
+@Service
+public class EmailReader {
+    private final EmailConfig emailConfig;
+    private final Session session;
+ 
+    @Autowired
+    public EmailReader(EmailConfig emailConfig) {
+        this.emailConfig = emailConfig;
+        this.session = createSession();
+    }
+ 
+    private Session createSession() {
+        Properties properties = new Properties();
+        properties.put("mail.store.protocol", emailConfig.getProtocol());
+properties.put("mail.imaps.host", emailConfig.getHost());
+        properties.put("mail.imaps.port", emailConfig.getPort());
+        properties.put("mail.imaps.ssl.enable", emailConfig.isSsl());
+        properties.put("mail.imaps.connectiontimeout", emailConfig.getConnectiontimeout());
+        properties.put("mail.imaps.timeout", emailConfig.getTimeout());
+ 
+        return Session.getInstance(properties, new Authenticator() {
+            @Override
+            protected PasswordAuthentication getPasswordAuthentication() {
+                return new PasswordAuthentication(
+                    emailConfig.getUsername(), 
+                    emailConfig.getPassword()
+                );
+            }
+        });
+    }
+ 
+    public void readLatestEmails(int numberOfEmails) {
+        try (Store store = session.getStore(emailConfig.getProtocol())) {
+            store.connect(
+                emailConfig.getHost(),
+                emailConfig.getUsername(),
+                emailConfig.getPassword()
+            );
+            
+            Folder inbox = store.getFolder("INBOX");
+            inbox.open(Folder.READ_ONLY);
+ 
+            int totalMessages = inbox.getMessageCount();
+            int startMessage = Math.max(1, totalMessages - numberOfEmails + 1);
+            Message[] messages = inbox.getMessages(startMessage, totalMessages);
+ 
+            for (Message message : messages) {
+                printEmailDetails(message);
+            }
+ 
+        } catch (MessagingException e) {
+            throw new RuntimeException("Error al leer correos", e);
+        }
+    }
+ 
+    private void printEmailDetails(Message message) {
+        try {
+            System.out.println("\n----------------------------------------");
+            System.out.println("De: " + formatAddresses(message.getFrom()));
+            System.out.println("Asunto: " + message.getSubject());
+            System.out.println("Fecha: " + message.getReceivedDate());
+            System.out.println("Contenido: " + getMessageContent(message));
+        } catch (MessagingException | IOException e) {
+            throw new RuntimeException("Error al procesar mensaje", e);
+        }
+    }
+ 
+    private String formatAddresses(Address[] addresses) {
+        if (addresses == null || addresses.length == 0) return "No disponible";
+        StringBuilder sb = new StringBuilder();
+        for (Address address : addresses) {
+            if (address instanceof InternetAddress) {
+                InternetAddress internetAddress = (InternetAddress) address;
+                sb.append(internetAddress.getPersonal() != null ? 
+                    internetAddress.getPersonal() : internetAddress.getAddress())
+                  .append("; ");
+            }
+        }
+        return sb.toString().trim();
+    }
+ 
+    private String getMessageContent(Message message) throws MessagingException, IOException {
+        Object content = message.getContent();
+        if (content instanceof String) {
+            return (String) content;
+        } else if (content instanceof Multipart) {
+            return getTextFromMultipart((Multipart) content);
+        }
+        return "Contenido no disponible";
+    }
+ 
+    private String getTextFromMultipart(Multipart multipart) throws MessagingException, IOException {
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < multipart.getCount(); i++) {
+            BodyPart bodyPart = multipart.getBodyPart(i);
+            if (bodyPart.isMimeType("text/plain")) {
+                result.append(bodyPart.getContent());
+            } else if (bodyPart.isMimeType("text/html")) {
+                result.append("(Contenido HTML disponible)");
+            }
+        }
+        return result.toString();
+    }
+}
+ 
+// Ejemplo de uso en un Controller
+@RestController
+@RequestMapping("/api/emails")
+public class EmailController {
+    
+    private final EmailReader emailReader;
+ 
+    @Autowired
+    public EmailController(EmailReader emailReader) {
+        this.emailReader = emailReader;
+    }
+ 
+    @GetMapping("/latest/{count}")
+    public ResponseEntity<String> getLatestEmails(@PathVariable int count) {
+        emailReader.readLatestEmails(count);
+        return ResponseEntity.ok("Correos leídos exitosamente");
+    }
+}
+

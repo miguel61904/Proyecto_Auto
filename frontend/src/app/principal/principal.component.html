@@ -1,0 +1,43 @@
+<div class="content">
+    <button id="aside" #icono (click)="aside();">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50"
+            style="fill:#FFFFFF;">
+            <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
+        </svg>
+    </button>
+    <aside #costado>
+        <div class="contenedor-cerrar">
+            <button id="btn-cerrar" (click)="cerrar();">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                    <path d="M 12.964844 4.9765625 A 2.0002 2.0002 0 0 0 11.34375 8.1210938 L 22.085938 24 L 11.34375 39.878906 A 2.0002 2.0002 0 1 0 14.65625 42.121094 L 24.5 27.570312 L 34.34375 42.121094 A 2.0002 2.0002 0 1 0 37.65625 39.878906 L 26.914062 24 L 37.65625 8.1210938 A 2.0002 2.0002 0 1 0 34.34375 5.8789062 L 24.5 20.429688 L 14.65625 5.8789062 A 2.0002 2.0002 0 0 0 12.964844 4.9765625 z"></path>
+                </svg>
+            </button>    
+        </div>
+        
+        <div class="contenedor-full">
+            <div class="contenedor-img">
+                <img class="img" src="data:image/png;base64,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" alt="user-male-circle">
+            </div>
+            <div class="contenedor-perfil">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACEklEQVR4nO2YwUsVURSHv0AfGViYCvGwRbiSwKiFuxahEIgi7qIQQm0jWRTUS2rxwO0T10EQIuif4ELc6MpFIBi8J/EiIghaKLSwXKhx4AwMw5Azc9+M58F88IPLveeeOWfmzp1zB3JycnJyDNIOjAMvVOPaZ54rwALwBzgNSPoqwGWMch34HBJ4ULtAD8ZoAz5FCN7TDnAJQ5RjBO/pHUYoAAcJEtgHWjHAYILgPd3DAE8dEpjBAHMOCcxhgCcOCUxhgNsOCfRjgAvAlwTB7+lcEzxKkMADjLESI/hlDFIAliIE/1FtzTICbAHHvqClvQkM00RcBe6opJ2T5aHmLjAGPAYeAqPATaAFowwAi7q3n/znBf4LrAPPgU4MMARsJ/wKf9NT3Lktk1WHEmIj5Al0Aa9U0k6NXuCrQ/CyhC6G+J312Ug7FW4A3x2C/wF0q69beiPkT8UEUPPZ1bSvojZi60wh5sE9TJM+f3GeYr0RCcw7Bv8zsI3K3Y06V2yd6AB+OybwPuBTlog3dgS8BoqqkvZ542LrxEvH4EXT6kt2mGdA1TcmAQcp+carOifx7hSlyjxL99XX25CxYsg1iyF2MjezH1dBjZxnAteAX44JTMVcQm9ClpBT+dEHrAGHCRP4cMZLXErzJU6DTLfRNMj8Q9ZopDyoRygl6o0qJdJmNotiLk26dLsuWzns5OTQBPwDhkf7OF7opewAAAAASUVORK5CYII=" width="30px" height="35px">
+                <button id="btn-perfil" (click)="perfil();">Perfil</button>
+            </div>
+            <div class="contenedor-ayuda">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABa0lEQVR4nO2WS0oDQRCGvwvoQgy+EvEmrn0NirjyBGoSN17EZVA3Pjbuo17AK+i4Ez2BE3FhXlJQgSFod/WkFRf5oWBo6u+PqqnpHhjrH2oRqAF3QAq8a6S6VgUqMYELQAPoAH1PdIFrYGlU6CbQMgCHIwOSotBDrSAUmq++XqTS7gjQPNxcednT3hdgG5jQ2NIBc7V93gI+80CnvvHI2qvDd2L5ZFzTK5WKVhUksaJrOw5fRzv5o2qedyatZag66YJo0uM9cIFvCwzQs3qnPXlNF/gpEPoBLKt315ObusBZAPQTWFPfrGe4+rp3FPCRemaAB0N+FqvVJfXcG/PT2MNljaYLXP1F8J4LXAm4/i40eob8tu8AEZ0aNhLgQJeG/AbGiz+LCH4D5jAq8VyLPQVeeVote2xYoQPVI/wIyNlfSEngoZJv7zojqgQc62RaqjwPeacWlfVquwEe9S+lpc9yOOxbPpmx+Gt9AX8ump0jUUyAAAAAAElFTkSuQmCC" width="27px" height="27px" >
+                <button id="btn-ayuda" (click)="ayuda();">Ayuda</button>
+            </div>
+            <div class="contenedor-salir">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABZElEQVR4nO2ZTUoDQRCFv1WOkfi7nwhewIleSMWFa8UTxOQEuYFnMUESY7YGjQpuAiMDvSgGxCxedyzoD5rs3qvXM11paiCTyWT+OzvAEFgAa6ASrHXQGwCdmMWfAR+ion9bK6AXa+djF1+ZEG11gKExmAInQEukXeuUwMx43CNmYcTr4mNQGo+5WtweWNXON2kB38HjSy1u39GY3ACf4ddlgGjkABuyD1wABzh9AuPgsQSOPAZ4ND7SEKkCdEPh8hApD3EBvBq/N+DYWxcq1CG20UYLZYi/AtTt7xy4Eq9Rw3sZzok8wFOiq3YFTLwHGMcIsAdcA3fi9ZDqFXJ/iNUUntto4fmPrOv9KjHxfpmber9OHwKXwK5aeBttVEoOsCG3scYq7gdbLwlGiz3j8awWHxjxWTBTDndPG8PdPmI6Yeyd4rr8HmO8Ttj1VYLiSyLSDo93Lv7EVOv1Y+18JpPJkIQfKpKPLTg0kzEAAAAASUVORK5CYII=" width="30px" height="30px">
+                <button id="btn-salir" mat-dialog-close (click)="salir();">Salir</button>
+            </div>
+        </div>
+    </aside>
+    <hr>
+    <app-analyctics></app-analyctics>
+    <button id="aggSolicitudes" type="submit" (click)="aggSolicitudes()">Agregar Solicitud</button>
+    <section>
+        <table datatable [dtOptions]="dtOptions" class="row-border hover" class="table-dark table table-striped my-datatable" style="background-color: rgb(32,35,47);">
+            
+        </table>
+    </section>
+</div>

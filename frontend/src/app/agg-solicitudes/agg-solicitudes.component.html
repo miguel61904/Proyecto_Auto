@@ -1,0 +1,90 @@
+<form (ngSubmit)="agregarV()">
+    <mat-dialog-content>
+                <label for="evento">Evento</label>
+                <br>
+                <input type="text" [(ngModel)]="nuevaVacante.evento" name="evento">
+                <br>
+                <label for="perfil">Perfil</label>
+                <br>
+                <input type="text" [(ngModel)]="nuevaVacante.perfil" name="perfil">
+                <br>
+                <label for="habilidades">Habilidades</label>
+                <br>
+                <select type="text" (change)="aggChip()" [(ngModel)]="nuevaHabilidad" name="habilidades">
+                    <option value="Programación en Java">Programación en Java</option>
+                    <option value="Diseño de bases de datos">Diseño de bases de datos</option>
+                    <option value="Desarrollo Frontend con Angular">Desarrollo Frontend con Angular</option>
+                    <option value="Manejo de APIs REST">Manejo de APIs REST</option>
+                    <option value="Pruebas unitarias con JUni">Pruebas unitarias con JUni</option>
+                    <option value="Control de versiones con Git">Control de versiones con Git</option>
+                    <option value="Metodologías ágiles (Scrum)">Metodologías ágiles (Scrum)</option>
+                    <option value="Integración continua y despliegue (CI/CD)">Integración continua y despliegue (CI/CD)</option>
+                    <option value="Desarrollo en Python">Desarrollo en Python</option>
+                    <option value="Optimización de rendimiento">Optimización de rendimiento</option>
+                    <option value="Seguridad en aplicaciones web">Seguridad en aplicaciones web</option>
+                    <option value="Uso de contenedores con Docker">Uso de contenedores con Docker</option>
+                    <option value="Automatización de pruebas con Selenium">Automatización de pruebas con Selenium</option>
+                    <option value="Resolución de problemas">Resolución de problemas</option>
+                    <option value="Conocimientos de patrones de diseño">Conocimientos de patrones de diseño</option>
+                    <option value="Uso de herramientas de monitoreo">Uso de herramientas de monitoreo</option>
+                    <option value="Comunicación efectiva en equipo">Comunicación efectiva en equipo</option>
+                    <option value="Documentación técnica">Documentación técnica</option>
+                </select>
+                <input type="text" (keyup.enter)="aggChip();" [(ngModel)]="nuevaVacante.habilidades" name="habilidades">
+                <div class="div-habilidades"></div>
+                <br>
+                <label for="evaluacion">Evaluación</label>
+                <br>
+                <select name="" id="" [(ngModel)]="nuevaVacante.evaluacion" name="evaluacion">
+                    <option value="MATRIZ_ING_SOFTWARE_QA">MATRIZ_ING_SOFTWARE_QA</option>
+                    <option value="MATRIZ_DESARROLLO_JR">MATRIZ_DESARROLLO_JR</option>
+                </select>
+                <br>
+                <label for="medellin">Medellín?</label>
+                <br>
+                <input type="checkbox" name="medellin" id="" [(ngModel)]="nuevaVacante.medellin">
+                <br>
+                <label for="fechaSolicitud">Fecha Solicitud</label>
+                <br>
+                <input type="date" name="fechaSolicitud" id="" [(ngModel)]="nuevaVacante.fechaSolicitud">
+                <br>
+                <label for="tipoSolicitud">Tipo de solicitud</label>
+                <br>
+                <select name="tipoSolicitud" id="" [(ngModel)]="nuevaVacante.tipoSolicitud">
+                    <option value="Nueva">Nueva</option>
+                    <option value="Reemplazo">Reemplazo</option>
+                </select>
+                <br>
+                <label for="estado">Estado</label>
+                <br>
+                <select name="estado" id="" [(ngModel)]="nuevaVacante.estado">
+                    <option value="Aplicado" >Aplicado</option>
+                    <option value="No Aplicado">No aplicado</option>
+                    <option value="Aplicado Seleccionado">Aplicado Seleccionado</option>
+                    <option value="Aplicado Preseleccionado">Aplicado Preseleccionado</option>
+                    <option value="Aplicado No seleccionado">Aplicado No seleccionado</option>
+                    <option value="Aplicado Desistido">Aplicado Desistido</option>
+                    <option value="Evaluacion">Evaluación</option>
+                    <option value="Abierto">Abierto</option>
+                    <option value="Aceptado">Aceptado</option>
+                    <option value="Cancelado">Cancelado</option>
+                </select>
+                <br>
+                <label for="observaciones">Observaciones</label>
+                <br>
+                <input type="text" name="observaciones" [(ngModel)]="nuevaVacante.observaciones">
+                <br>
+                <label for="rgs">RGS</label>
+                <br>
+                <input type="text" name="rgs" [(ngModel)]="nuevaVacante.rgs">
+                <br>
+                <label for="evc">EVC</label>
+                <br>
+                <input type="text" name="evc" id="" [(ngModel)]="nuevaVacante.evc">
+    </mat-dialog-content>
+    
+    <mat-dialog-actions aling="end">
+        <button type="submit" mat-button mat-dialog-save>Guardar</button>
+        <button mat-button mat-dialog-close>Cerrar</button>
+    </mat-dialog-actions>
+</form>

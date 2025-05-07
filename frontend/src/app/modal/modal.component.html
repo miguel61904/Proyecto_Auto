@@ -1,0 +1,26 @@
+<div class="content">
+    <mat-dialog-content>
+        <section>
+            <div class="">
+                <label for="">Tipo de Caso</label>
+                <br>
+                <select name="" id="">
+                    <option value="">Fallas</option>
+                    <option value="">Aspectos a mejorar</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="">Observaciones</label>
+                <br>
+                <textarea name="" id=""></textarea>
+            </div>
+        </section>
+    </mat-dialog-content>
+    
+    <mat-dialog-actions aling="end">
+        <button mat-button mat-dialog-save (click)="guardarModal();" >Guardar</button>
+        <button (click)="cerrarModal();" mat-button mat-dialog-close>Cerrar</button>
+    </mat-dialog-actions>
+</div>
+

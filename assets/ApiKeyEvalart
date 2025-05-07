@@ -1,0 +1,17 @@
+La URL base que deben utilizar para consumir los datos es la siguiente:
+https://questionnaire.evalart.com/extapi
+Además, contamos con un manual detallado que pueden consultar en el siguiente enlace de Postman, donde encontrarán los endpoints disponibles:
+Evalart API - Postman Workspace: https://www.postman.com/blue-comet-914157/evalart-s-public-workspace/collection/egqrp4p/evalart-api
+Por último, les comparto el token que deben utilizar:
+UrykF/Y/BYbRr435wS3dJixQZrA7CPZ/dfJYBOj/qpk=
+
+
+> GET /extapi/get_all_positions?getAll=1&filter=1&language=en HTTP/1.1
+> Host: questionnaire.evalart.com
+> Cookie: AWSALBCORS=Kq17JfoxEvdkiU3stbnFXNDUFFSUvoXINONry6n2NSCG7Pnh+0TrC+iF+mYCUgLV0S3MDHjP8n0UApG75bTxfxWqA1/kwZW+r/CLs5o4ZIHqQtlYX3yMwAwdZke7; PHPSESSID=tcchsh9acijbumk11qbc7ijmc5; AWSALB=Kq17JfoxEvdkiU3stbnFXNDUFFSUvoXINONry6n2NSCG7Pnh+0TrC+iF+mYCUgLV0S3MDHjP8n0UApG75bTxfxWqA1/kwZW+r/CLs5o4ZIHqQtlYX3yMwAwdZke7
+> User-Agent: insomnia/10.2.0
+> auth_email: catalina.trujillo@tcs.com
+> auth_acc_id: 70
+> auth_pwd: 04d3cbda-8ef40852-f6499ada-d32a1602
+> Authorization: Bearer UrykF/Y/BYbRr435wS3dJixQZrA7CPZ/dfJYBOj/qpk=
+> Accept: */*
